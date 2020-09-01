@@ -1,7 +1,4 @@
-let formData = {
-  name: "Byron",
-  email: "ser@gmail.com"
-};
+
 
 
 let configObj = {
@@ -10,10 +7,10 @@ let configObj = {
     "Content-Type": "application/json",
     "Accept": "application/json"
   },
-  body: JSON.stringify(formData)
+  body: JSON.stringify(name, email)
 };
 
-function submitData(formData){
+function submitData(name, email){
   return fetch("http://localhost:3000/users", configObj)
   .then(function(response){
     return response.json();
