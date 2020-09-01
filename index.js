@@ -13,14 +13,16 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 
-fetch("http://localhost:3000/users", configObj)
-.then(function(response){
-  return response.json();
-})
-.then(function(object){
-  console.log(object);
-})
-.catch(function(error){
-  alert("Something is wrong");
-  console.log(error.message);
-});
+function submitData(formData){
+  return fetch("http://localhost:3000/users", configObj)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(object){
+    console.log(object);
+  })
+  .catch(function(error){
+    alert("Something is wrong");
+    console.log(error.message);
+  });
+}
