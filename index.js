@@ -1,7 +1,7 @@
 let configObj = {
   method: "POST",
   headers: {
-    "Content-Type": "application/json",
+    "content-type": "application/json",
     "Accept": "application/json"
   },
   body: JSON.stringify(name, email)
