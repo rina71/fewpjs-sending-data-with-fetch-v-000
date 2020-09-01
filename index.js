@@ -1,6 +1,6 @@
 let formData = {
-  userName: "Byron",
-  useEmail: "ser@gmail.com"
+  name: "Byron",
+  email: "ser@gmail.com"
 };
 
 
