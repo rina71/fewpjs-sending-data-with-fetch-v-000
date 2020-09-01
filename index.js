@@ -1,6 +1,3 @@
-
-
-
 let configObj = {
   method: "POST",
   headers: {
